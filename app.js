@@ -11,8 +11,13 @@ const concesionaria = {
   },
   autosParaLaVenta(){
     return this.autos.filter(auto => auto.vendido === false);
+  },
+  autosNuevos(){
+    return this.autosParaLaVenta().filter(auto => auto.km < 100);
+  },
+  listaDeVentas(){
+    return this.autos.filter(auto => auto.vendido).map(auto =>{
+        return auto.precio;
+    })
   }
 };
-
-
-console.log(concesionaria.autosParaLaVenta());
