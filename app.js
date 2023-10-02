@@ -10,15 +10,13 @@ const concesionaria = {
     return auto ? (auto.vendido = true, auto) : null;
   },
   autosParaLaVenta(){
-    return this.autos.filter(auto => auto.vendido === false);
+    return this.autos.filter(auto => !auto.vendido);
   },
   autosNuevos(){
     return this.autosParaLaVenta().filter(auto => auto.km < 100);
   },
   listaDeVentas(){
-    return this.autos.filter(auto => auto.vendido).map(auto =>{
-        return auto.precio;
-    })
+    return this.autos.filter(auto => auto.vendido).map(auto => auto.precio);
   },
   totalDeVentas(){
     return this.listaDeVentas().reduce((acumulador, venta) => acumulador + venta, 0);
@@ -27,9 +25,7 @@ const concesionaria = {
     return auto.precio <= persona.capacidadDePagoTotal && (auto.precio / auto.cuotas) <= persona.capacidadDePagoEnCuotas;
   },
   autosQuePuedeComprar(persona){
-    return this.autosParaLaVenta().filter(auto => {
-        return this.puedeComprar(auto, persona);
-    });
+    return this.autosParaLaVenta().filter(auto => this.puedeComprar(auto, persona));
   }
 };
 
