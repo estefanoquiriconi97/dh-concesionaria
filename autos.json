@@ -1,0 +1,58 @@
+[
+    {
+      "marca": "Ford",
+      "modelo": "Fiesta",
+      "precio": 150000,
+      "km": 200,
+      "color": "Azul",
+      "cuotas": 12,
+      "anio": 2019,
+      "patente": "APL123",
+      "vendido": false
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "precio": 100000,
+      "km": 0,
+      "color": "Blanco",
+      "cuotas": 14,
+      "anio": 2019,
+      "patente": "JJK116",
+      "vendido": false
+    },
+    {
+      "marca": "Chevrolet",
+      "modelo": "Cruze",
+      "precio": 125000,
+      "km": 30000,
+      "color": "Gris",
+      "cuotas": 10,
+      "anio": 2020,
+      "patente": "XYZ789",
+      "vendido": false
+    },
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "precio": 135000,
+      "km": 15000,
+      "color": "Rojo",
+      "cuotas": 8,
+      "anio": 2021,
+      "patente": "LMN456",
+      "vendido": false
+    },
+    {
+      "marca": "Volkswagen",
+      "modelo": "Golf",
+      "precio": 110000,
+      "km": 50000,
+      "color": "Negro",
+      "cuotas": 15,
+      "anio": 2018,
+      "patente": "PQR123",
+      "vendido": false
+    }
+  ]
+  
